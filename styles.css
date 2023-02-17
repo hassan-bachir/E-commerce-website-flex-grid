@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;    
+}
+
+.categories {
+    max-width: 1200px;
+    margin: 40px auto;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cat-item {
+    flex-grow: 1;
+    min-width: 33.33%;
+    border: 3px solid white;
+    box-sizing: border-box; 
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.cat-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.cat-item p {
+    padding: 5px 10px;
+    background: black;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold ;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+@media (max-width:1000px) {
+    .cat-item {
+        min-width: 50%;
+    }
+    
+}
+
+@media (max-width:800px) {
+    .cat-item {
+        min-width: 100%;
+    }
+    
+}
+
+.sales-title {
+    text-align: center;
+}
+
+.featured-products {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 5px;
+}
+
+@media (max-width:1000px) {
+    .featured-products{
+        grid-template-columns: 1fr 1fr;}
+}
+@media (max-width:800px) {
+    .featured-products{
+        grid-template-columns: 1fr ;}
+}
+
+
+
+.product {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    
+}
+.product-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+button {
+    outline: none;
+    background: black;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.item-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.description {
+    color: #666;
+}
+.price {
+    font-style: italic;
+}
